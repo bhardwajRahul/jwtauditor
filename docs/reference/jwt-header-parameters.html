@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWT Header Parameters Reference - JWTAuditor</title>
-    <meta name="description" content="Complete reference guide to JWT header parameters including alg, typ, kid, and more.">
-    <meta name="keywords" content="JWT, header, parameters, alg, typ, kid, jku, x5u">
+    <title>JWT Header Parameters: alg, typ, kid, jku, x5u, jwk | Security Reference | JWTAuditor</title>
+    <meta name="description" content="JWT header parameters reference: alg (algorithm), typ (type), kid (key ID), jku (JWK Set URL), x5u (X.509 URL), jwk (JSON Web Key). Security implications and attack vectors for each parameter.">
+    <meta name="keywords" content="JWT header parameters, JWT alg header, JWT kid parameter, JWT jku header, JWT x5u header, JWT jwk header, JWT typ header, JWT header security, JWT header attacks">
+    <meta name="author" content="JWTAuditor Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwtauditor.com/docs/reference/jwt-header-parameters.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="JWT Header Parameters: alg, typ, kid, jku, x5u, jwk Reference">
+    <meta property="og:description" content="Complete JWT header parameters reference with security implications and attack vectors.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jwtauditor.com/docs/reference/jwt-header-parameters.html">
+    <meta property="og:site_name" content="JWTAuditor">
+    <meta property="og:image" content="https://jwtauditor.com/img/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JWT Header Parameters: Complete Reference">
+    <meta name="twitter:description" content="All JWT header parameters with security implications: alg, typ, kid, jku, x5u, jwk.">
+    <meta name="twitter:site" content="@infosecmania">
+    <meta name="twitter:image" content="https://jwtauditor.com/img/og-image.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "JWT Header Parameters: alg, typ, kid, jku, x5u, jwk Reference",
+        "description": "Complete reference guide to JWT header parameters including security implications and attack vectors.",
+        "author": {"@type": "Organization", "name": "JWTAuditor Team", "url": "https://jwtauditor.com"},
+        "publisher": {"@type": "Organization", "name": "JWTAuditor", "url": "https://jwtauditor.com"},
+        "datePublished": "2024-12-20",
+        "dateModified": "2026-07-11",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jwtauditor.com/docs/reference/jwt-header-parameters.html"},
+        "articleSection": "Reference"
+    }
+    </script>
+
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../css/docs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -77,6 +115,11 @@
                         <span><i class="fas fa-book"></i> Reference Guide</span>
                         <span><i class="fas fa-clock"></i> Reading time: 8 min</span>
                     </div>
+                </div>
+
+                <div class="article-byline">
+                    <span class="author"><i class="fas fa-user"></i> <span>By</span> <a href="https://github.com/dr34mhacks" target="_blank">Sid Joshi</a></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> Last updated: July 11, 2026</span>
                 </div>
 
                 <div class="docs-section intro-section">
@@ -478,10 +521,9 @@ def validate_jwt_header(token):
             </div>
         </div>
         <div class="footer-bottom">
-<p>&copy; 2025 A Project by 
-  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid</a> & 
-  <a href="https://github.com/thecybersandeep" style="color: var(--primary-color);">Sandeep</a> • 
-  
+<p>&copy; 2026 A Project by
+  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid Joshi</a> •
+
 </p>            <div class="social-links">
                 <a href="https://x.com/infosecmania" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/infosecmania" target="_blank"><i class="fab fa-linkedin"></i></a>

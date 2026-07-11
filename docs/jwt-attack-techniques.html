@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWT Attack Techniques - JWTAuditor</title>
-    <meta name="description" content="Learn about common JWT attack techniques including algorithm confusion, weak secrets, and token tampering.">
-    <meta name="keywords" content="JWT, attack techniques, algorithm confusion, none algorithm, token tampering">
+    <title>JWT Attack Techniques: Algorithm Confusion, None Bypass, Key Injection | JWTAuditor</title>
+    <meta name="description" content="Master JWT attack techniques: algorithm confusion (RS256 to HS256), none algorithm bypass, JWK/JKU injection, kid path traversal, weak secret exploitation. Step-by-step exploitation guides for pentesters.">
+    <meta name="keywords" content="JWT attack techniques, algorithm confusion attack, JWT none bypass, JWK injection, JKU attack, kid injection, JWT weak secret, RS256 to HS256 attack, JWT privilege escalation">
+    <meta name="author" content="Sid Joshi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwtauditor.com/docs/jwt-attack-techniques.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="JWT Attack Techniques: Algorithm Confusion, None Bypass, Key Injection">
+    <meta property="og:description" content="Master JWT attacks: algorithm confusion, none bypass, JWK injection. Step-by-step exploitation guides.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jwtauditor.com/docs/jwt-attack-techniques.html">
+    <meta property="og:site_name" content="JWTAuditor">
+    <meta property="og:image" content="https://jwtauditor.com/img/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JWT Attack Techniques: Algorithm Confusion, None Bypass">
+    <meta name="twitter:description" content="Master JWT attacks with step-by-step exploitation guides for pentesters.">
+    <meta name="twitter:site" content="@infosecmania">
+    <meta name="twitter:image" content="https://jwtauditor.com/img/og-image.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "JWT Attack Techniques: Algorithm Confusion, None Bypass, Key Injection",
+        "description": "Learn JWT attack techniques including algorithm confusion, weak secrets, token tampering, and key injection.",
+        "author": {"@type": "Person", "name": "Sid Joshi", "url": "https://github.com/dr34mhacks"},
+        "publisher": {"@type": "Organization", "name": "JWTAuditor", "url": "https://jwtauditor.com"},
+        "datePublished": "2024-12-20",
+        "dateModified": "2026-07-11",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jwtauditor.com/docs/jwt-attack-techniques.html"},
+        "teaches": ["Algorithm confusion attacks", "None algorithm bypass", "JWK header injection", "JKU URL manipulation", "KID parameter exploitation"],
+        "articleSection": "Security Guides"
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "JWTAuditor",
+                "item": "https://jwtauditor.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Documentation",
+                "item": "https://jwtauditor.com/docs/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "JWT Attack Techniques"
+            }
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -71,12 +137,25 @@
             </aside>
 
             <div class="docs-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">JWTAuditor</a></li>
+                        <li><a href="index.html">Docs</a></li>
+                        <li aria-current="page">JWT Attack Techniques</li>
+                    </ol>
+                </nav>
+
                 <div class="docs-header">
                     <h1>JWT Attack Techniques</h1>
                     <div class="docs-meta">
                         <span><i class="fas fa-user-ninja"></i> Security Guide</span>
                         <span><i class="fas fa-clock"></i> Reading time: 12 min</span>
                     </div>
+                </div>
+
+                <div class="article-byline">
+                    <span class="author"><i class="fas fa-user"></i> <span>By</span> <a href="https://github.com/dr34mhacks" target="_blank">Sid Joshi</a></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> Last updated: July 11, 2026</span>
                 </div>
 
                 <div class="docs-section intro-section">
@@ -618,6 +697,24 @@
                         Always follow security best practices, use up-to-date libraries, implement proper validation, and regularly test your JWT implementation for vulnerabilities.
                     </p>
                     
+                    <div class="related-articles">
+                        <h3><i class="fas fa-book-reader"></i> Related Articles</h3>
+                        <div class="related-grid">
+                            <a href="jwt-attack-vectors.html" class="related-card">
+                                <h4>Complete JWT Attack Vectors</h4>
+                                <p>Master 15+ attack techniques used in real-world penetration testing</p>
+                            </a>
+                            <a href="jwt-vulnerabilities-guide.html" class="related-card">
+                                <h4>JWT Vulnerabilities Guide</h4>
+                                <p>Comprehensive overview of JWT security vulnerabilities</p>
+                            </a>
+                            <a href="secure-jwt-implementation.html" class="related-card">
+                                <h4>Secure JWT Implementation</h4>
+                                <p>Best practices for implementing secure JWT authentication</p>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="next-steps">
                         <h3>Next Steps</h3>
                         <div class="next-links">
@@ -660,10 +757,9 @@
             </div>
         </div>
         <div class="footer-bottom">
-<p>&copy; 2025 A Project by 
-  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid</a> & 
-  <a href="https://github.com/thecybersandeep" style="color: var(--primary-color);">Sandeep</a> • 
-  
+<p>&copy; 2026 A Project by
+  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid Joshi</a> •
+
 </p>            <div class="social-links">
                 <a href="https://x.com/infosecmania" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/infosecmania" target="_blank"><i class="fab fa-linkedin"></i></a>

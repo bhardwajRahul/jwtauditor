@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWT Editor Guide - JWTAuditor Documentation</title>
-    <meta name="description" content="Learn how to use JWTAuditor's JWT Editor tool to modify JWT headers, payloads, and re-sign tokens with various algorithms.">
-    <meta name="keywords" content="JWT, editor, modify, re-sign, header, payload, signature">
+    <title>JWT Editor: Modify Header, Payload & Re-sign with HS256/RS256 | JWTAuditor</title>
+    <meta name="description" content="Edit JWT tokens online: modify header (alg, typ), payload claims, re-sign with HS256, HS384, HS512, RS256, RS384, RS512. Test algorithm confusion attacks. Client-side privacy.">
+    <meta name="keywords" content="JWT editor online, modify JWT token, JWT re-sign, change JWT payload, JWT header editor, algorithm confusion test, JWT tampering tool, edit JWT claims">
+    <meta name="author" content="JWTAuditor Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwtauditor.com/docs/tool-guides/jwt-editor.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="JWT Editor: Modify Header, Payload & Re-sign Tokens">
+    <meta property="og:description" content="Edit JWT tokens: modify claims, re-sign with HS256/RS256. Test algorithm confusion attacks.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jwtauditor.com/docs/tool-guides/jwt-editor.html">
+    <meta property="og:site_name" content="JWTAuditor">
+    <meta property="og:image" content="https://jwtauditor.com/img/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JWT Editor: Modify & Re-sign Tokens Online">
+    <meta name="twitter:description" content="Edit JWT header, payload, re-sign with various algorithms. Client-side privacy.">
+    <meta name="twitter:site" content="@infosecmania">
+    <meta name="twitter:image" content="https://jwtauditor.com/img/og-image.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Edit and Re-sign JWT Tokens",
+        "description": "Learn how to modify JWT headers, payloads, and re-sign tokens with various algorithms for security testing.",
+        "tool": {"@type": "HowToTool", "name": "JWTAuditor JWT Editor"},
+        "step": [
+            {"@type": "HowToStep", "name": "Load JWT", "text": "Paste and load your JWT token"},
+            {"@type": "HowToStep", "name": "Edit Claims", "text": "Modify header or payload JSON"},
+            {"@type": "HowToStep", "name": "Select Algorithm", "text": "Choose signing algorithm and provide key"},
+            {"@type": "HowToStep", "name": "Generate Token", "text": "Generate the modified JWT"}
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../css/docs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -77,6 +116,11 @@
                         <span><i class="fas fa-edit"></i> Advanced Tool</span>
                         <span><i class="fas fa-clock"></i> Updated: May 2024</span>
                     </div>
+                </div>
+
+                <div class="article-byline">
+                    <span class="author"><i class="fas fa-user"></i> <span>By</span> <a href="https://github.com/dr34mhacks" target="_blank">Sid Joshi</a></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> Last updated: July 11, 2026</span>
                 </div>
 
                 <div class="docs-section intro-section">
@@ -506,7 +550,7 @@ openssl rsa -in private_key.pem -pubout -out public_key.pem</code></pre>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 A Project by <a href="https://github.com/dr34mhacks"></a>Sid </a>& <a href="https://github.com/thecybersandeep">Sandeep</a></p>
+            <p>&copy; 2026 A Project by <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid Joshi</a></p>
             <div class="social-links">
                 <a href="https://x.com/infosecmania" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/infosecmania" target="_blank"><i class="fab fa-linkedin"></i></a>

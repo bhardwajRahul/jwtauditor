@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWT Claims Explained - JWTAuditor</title>
-    <meta name="description" content="Comprehensive guide to JWT claims, including registered, public, and private claims, with examples and best practices.">
-    <meta name="keywords" content="JWT, claims, registered claims, public claims, private claims, JSON Web Token">
+    <title>JWT Claims Explained: sub, iss, aud, exp, iat, nbf, jti | Complete Guide | JWTAuditor</title>
+    <meta name="description" content="Master JWT claims: registered claims (sub, iss, aud, exp, iat, nbf, jti), public claims, and private claims. Learn claim validation, security implications, and common misconfigurations pentesters exploit.">
+    <meta name="keywords" content="JWT claims, JWT sub claim, JWT iss issuer, JWT aud audience, JWT exp expiration, JWT iat issued at, JWT nbf not before, JWT jti, registered claims, private claims">
+    <meta name="author" content="JWTAuditor Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwtauditor.com/docs/jwt-claims.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="JWT Claims Explained: sub, iss, aud, exp, iat, nbf, jti">
+    <meta property="og:description" content="Complete guide to JWT claims. Learn registered, public, and private claims with security best practices.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jwtauditor.com/docs/jwt-claims.html">
+    <meta property="og:site_name" content="JWTAuditor">
+    <meta property="og:image" content="https://jwtauditor.com/img/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JWT Claims Explained: sub, iss, aud, exp, iat, nbf, jti">
+    <meta name="twitter:description" content="Master JWT claims: registered, public, and private claims with security implications.">
+    <meta name="twitter:site" content="@infosecmania">
+    <meta name="twitter:image" content="https://jwtauditor.com/img/og-image.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "JWT Claims Explained: Complete Guide to sub, iss, aud, exp, iat, nbf, jti",
+        "description": "Comprehensive guide to JWT claims, including registered, public, and private claims, with examples and security best practices.",
+        "author": {"@type": "Organization", "name": "JWTAuditor Team", "url": "https://jwtauditor.com"},
+        "publisher": {"@type": "Organization", "name": "JWTAuditor", "url": "https://jwtauditor.com"},
+        "datePublished": "2024-12-20",
+        "dateModified": "2026-07-11",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jwtauditor.com/docs/jwt-claims.html"},
+        "teaches": ["Registered JWT claims", "Public claims", "Private claims", "Claim validation", "Security implications of claims"],
+        "articleSection": "JWT Fundamentals"
+    }
+    </script>
+
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -77,6 +116,11 @@
                         <span><i class="fas fa-book"></i> Core Concepts</span>
                         <span><i class="fas fa-clock"></i> Reading time: 8 min</span>
                     </div>
+                </div>
+
+                <div class="article-byline">
+                    <span class="author"><i class="fas fa-user"></i> <span>By</span> <a href="https://github.com/dr34mhacks" target="_blank">Sid Joshi</a></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> Last updated: July 11, 2026</span>
                 </div>
 
                 <div class="docs-section intro-section">
@@ -351,10 +395,9 @@
             </div>
         </div>
         <div class="footer-bottom">
-<p>&copy; 2025 A Project by 
-  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid</a> & 
-  <a href="https://github.com/thecybersandeep" style="color: var(--primary-color);">Sandeep</a> • 
-  
+<p>&copy; 2026 A Project by
+  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid Joshi</a> •
+
 </p>            <div class="social-links">
                 <a href="https://x.com/infosecmania" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/infosecmania" target="_blank"><i class="fab fa-linkedin"></i></a>

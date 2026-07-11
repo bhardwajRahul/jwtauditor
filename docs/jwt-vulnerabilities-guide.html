@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWT Vulnerabilities Guide - JWTAuditor</title>
-    <meta name="description" content="Comprehensive guide to JWT security vulnerabilities, exploitation techniques, and mitigation strategies.">
-    <meta name="keywords" content="JWT, security, vulnerabilities, algorithm none, key confusion, brute force">
+    <title>JWT Vulnerabilities Guide 2026 - 15+ Security Exploits Explained | JWTAuditor</title>
+    <meta name="description" content="Master JWT security vulnerabilities with our 2026 guide. Learn 15+ exploit techniques: algorithm none bypass, key confusion attacks, JWK injection, kid parameter exploits, and real-world mitigation strategies for pentesters.">
+    <meta name="keywords" content="JWT vulnerabilities, JWT security exploits, algorithm none attack, key confusion attack, JWK injection, JWT pentesting, JWT brute force, JSON Web Token security, JWT hacking techniques, OWASP JWT">
+    <meta name="author" content="Sid Joshi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwtauditor.com/docs/jwt-vulnerabilities-guide.html">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="JWT Vulnerabilities Guide 2026 - 15+ Security Exploits Explained">
+    <meta property="og:description" content="Master JWT security vulnerabilities. Learn 15+ exploit techniques used by professional pentesters: algorithm none, key confusion, JWK injection, and more.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jwtauditor.com/docs/jwt-vulnerabilities-guide.html">
+    <meta property="og:site_name" content="JWTAuditor">
+    <meta property="og:image" content="https://jwtauditor.com/img/og-image.png">
+    <meta property="og:image:alt" content="JWT Vulnerabilities Guide - Security Exploits for Pentesters">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JWT Vulnerabilities Guide 2026 - 15+ Exploits">
+    <meta name="twitter:description" content="Master JWT security vulnerabilities. Learn algorithm none bypass, key confusion attacks, JWK injection, and more exploitation techniques.">
+    <meta name="twitter:site" content="@infosecmania">
+    <meta name="twitter:creator" content="@infosecmania">
+    <meta name="twitter:image" content="https://jwtauditor.com/img/og-image.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "JWT Vulnerabilities Guide 2026 - 15+ Security Exploits Explained",
+        "description": "Comprehensive guide to JWT security vulnerabilities, exploitation techniques, and mitigation strategies for penetration testers and security professionals.",
+        "author": {
+            "@type": "Person",
+            "name": "Sid Joshi",
+            "url": "https://github.com/dr34mhacks"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "JWTAuditor",
+            "url": "https://jwtauditor.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://jwtauditor.com/img/logo.svg"
+            }
+        },
+        "datePublished": "2024-12-20",
+        "dateModified": "2026-07-11",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://jwtauditor.com/docs/jwt-vulnerabilities-guide.html"
+        },
+        "keywords": ["JWT vulnerabilities", "JWT security", "algorithm none attack", "key confusion", "JWK injection", "JWT pentesting", "JSON Web Token exploits"],
+        "articleSection": "Security Guides",
+        "wordCount": 5000,
+        "teaches": [
+            "Algorithm None Attack exploitation",
+            "Symmetric Key Bruteforcing techniques",
+            "Algorithm Confusion Attack methods",
+            "JWK Header Injection vulnerabilities",
+            "JKU/X5U URL manipulation attacks",
+            "Key ID (kid) Parameter Injection",
+            "Token replay attack prevention",
+            "Weak secret detection"
+        ],
+        "about": {
+            "@type": "Thing",
+            "name": "JWT Security Vulnerabilities",
+            "description": "Security vulnerabilities in JSON Web Token implementations"
+        }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "JWTAuditor", "item": "https://jwtauditor.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Documentation", "item": "https://jwtauditor.com/docs/"},
+            {"@type": "ListItem", "position": 3, "name": "JWT Vulnerabilities Guide"}
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -71,11 +156,24 @@
             </aside>
 
             <div class="docs-content">
+                <!-- Breadcrumb Navigation -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">JWTAuditor</a></li>
+                        <li><a href="index.html">Docs</a></li>
+                        <li aria-current="page">JWT Vulnerabilities Guide</li>
+                    </ol>
+                </nav>
+
                 <div class="docs-header">
                     <h1>JWT Vulnerabilities Guide</h1>
                     <div class="docs-meta">
                         <span><i class="fas fa-user-secret"></i> Security Guide</span>
                         <span><i class="fas fa-clock"></i> Reading time: 15 min</span>
+                    </div>
+                    <div class="article-byline">
+                        <span class="author"><i class="fas fa-user"></i> <span>By</span> <a href="https://github.com/dr34mhacks" target="_blank">Sid Joshi</a></span>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> Last updated: July 11, 2026</span>
                     </div>
                 </div>
 
@@ -1471,6 +1569,25 @@ async function example() {
                         </li>
                     </ul>
                     
+                    <!-- Related Articles for SEO -->
+                    <div class="related-articles">
+                        <h3><i class="fas fa-book-reader"></i> Related Articles</h3>
+                        <div class="related-grid">
+                            <a href="jwt-attack-vectors.html" class="related-card">
+                                <h4>Complete JWT Attack Vectors</h4>
+                                <p>Master 15+ attack techniques used in real-world pentests</p>
+                            </a>
+                            <a href="jwt-attack-techniques.html" class="related-card">
+                                <h4>JWT Attack Techniques</h4>
+                                <p>Step-by-step exploitation guides for each vulnerability</p>
+                            </a>
+                            <a href="jwt-security-checklist.html" class="related-card">
+                                <h4>JWT Security Checklist</h4>
+                                <p>50+ point audit checklist for comprehensive testing</p>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="next-steps">
                         <h3>Next Steps</h3>
                         <div class="next-links">
@@ -1513,10 +1630,9 @@ async function example() {
             </div>
         </div>
         <div class="footer-bottom">
-<p>&copy; 2025 A Project by 
-  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid</a> & 
-  <a href="https://github.com/thecybersandeep" style="color: var(--primary-color);">Sandeep</a> • 
-  
+<p>&copy; 2026 A Project by
+  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid Joshi</a> •
+
 </p>            <div class="social-links">
                 <a href="https://x.com/infosecmania" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/infosecmania" target="_blank"><i class="fab fa-linkedin"></i></a>

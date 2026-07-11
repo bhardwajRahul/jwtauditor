@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure JWT Implementation Guide - JWTAuditor</title>
-    <meta name="description" content="Best practices and code examples for implementing JWT authentication securely in your applications.">
-    <meta name="keywords" content="JWT, security, implementation, best practices, authentication, authorization">
+    <title>Secure JWT Implementation Guide: Best Practices & Code Examples | JWTAuditor</title>
+    <meta name="description" content="Implement JWT securely: algorithm whitelisting, secret key management, token storage, refresh token rotation, claim validation. Code examples in Node.js, Python, Java, Go.">
+    <meta name="keywords" content="secure JWT implementation, JWT best practices, JWT Node.js example, JWT Python example, JWT secret management, refresh token rotation, JWT algorithm whitelist, JWT claim validation">
+    <meta name="author" content="Sid Joshi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwtauditor.com/docs/secure-jwt-implementation.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Secure JWT Implementation Guide: Best Practices & Code Examples">
+    <meta property="og:description" content="Implement JWT securely with code examples. Algorithm whitelisting, secret management, token storage, refresh rotation.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jwtauditor.com/docs/secure-jwt-implementation.html">
+    <meta property="og:site_name" content="JWTAuditor">
+    <meta property="og:image" content="https://jwtauditor.com/img/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Secure JWT Implementation Guide: Best Practices">
+    <meta name="twitter:description" content="JWT security best practices with code examples in Node.js, Python, Java, Go.">
+    <meta name="twitter:site" content="@infosecmania">
+    <meta name="twitter:image" content="https://jwtauditor.com/img/og-image.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Secure JWT Implementation Guide: Best Practices & Code Examples",
+        "description": "Best practices and code examples for implementing JWT authentication securely in your applications.",
+        "author": {"@type": "Person", "name": "Sid Joshi", "url": "https://github.com/dr34mhacks"},
+        "publisher": {"@type": "Organization", "name": "JWTAuditor", "url": "https://jwtauditor.com"},
+        "datePublished": "2024-12-20",
+        "dateModified": "2026-07-11",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jwtauditor.com/docs/secure-jwt-implementation.html"},
+        "teaches": ["Algorithm whitelisting", "Secret key management", "Token storage best practices", "Refresh token rotation", "Claim validation"],
+        "articleSection": "Security Guides",
+        "programmingLanguage": ["JavaScript", "Python", "Java", "Go"]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "JWTAuditor",
+                "item": "https://jwtauditor.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Documentation",
+                "item": "https://jwtauditor.com/docs/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Secure JWT Implementation Guide"
+            }
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -71,12 +138,25 @@
             </aside>
 
             <div class="docs-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">JWTAuditor</a></li>
+                        <li><a href="index.html">Docs</a></li>
+                        <li aria-current="page">Secure JWT Implementation Guide</li>
+                    </ol>
+                </nav>
+
                 <div class="docs-header">
                     <h1>Secure JWT Implementation Guide</h1>
                     <div class="docs-meta">
                         <span><i class="fas fa-lock"></i> Security Best Practices</span>
                         <span><i class="fas fa-clock"></i> Reading time: 12 min</span>
                     </div>
+                </div>
+
+                <div class="article-byline">
+                    <span class="author"><i class="fas fa-user"></i> <span>By</span> <a href="https://github.com/dr34mhacks" target="_blank">Sid Joshi</a></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> Last updated: July 11, 2026</span>
                 </div>
 
                 <div class="docs-section intro-section">
@@ -1436,6 +1516,24 @@ async function validateJWTMiddleware(req, res, next) {
                         </li>
                     </ul>
                     
+                    <div class="related-articles">
+                        <h3><i class="fas fa-book-reader"></i> Related Articles</h3>
+                        <div class="related-grid">
+                            <a href="jwt-vulnerabilities-guide.html" class="related-card">
+                                <h4>JWT Vulnerabilities Guide</h4>
+                                <p>Comprehensive overview of JWT security vulnerabilities and detection methods</p>
+                            </a>
+                            <a href="jwt-attack-vectors.html" class="related-card">
+                                <h4>Complete JWT Attack Vectors</h4>
+                                <p>Master 15+ attack techniques used in real-world penetration testing</p>
+                            </a>
+                            <a href="jwt-security-checklist.html" class="related-card">
+                                <h4>JWT Security Checklist</h4>
+                                <p>50+ point security audit checklist for JWT implementations</p>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="next-steps">
                         <h3>Next Steps</h3>
                         <div class="next-links">
@@ -1478,10 +1576,9 @@ async function validateJWTMiddleware(req, res, next) {
             </div>
         </div>
         <div class="footer-bottom">
-<p>&copy; 2025 A Project by 
-  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid</a> & 
-  <a href="https://github.com/thecybersandeep" style="color: var(--primary-color);">Sandeep</a> • 
-  
+<p>&copy; 2026 A Project by
+  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid Joshi</a> •
+
 </p>            <div class="social-links">
                 <a href="https://x.com/infosecmania" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/infosecmania" target="_blank"><i class="fab fa-linkedin"></i></a>

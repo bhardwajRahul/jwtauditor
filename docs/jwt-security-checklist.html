@@ -3,16 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWT Security Checklist - Complete Audit Guide | JWTAuditor</title>
-    <meta name="description" content="Comprehensive JWT security checklist for developers, security engineers, and penetration testers. 50+ security checks covering implementation, cryptography, and best practices.">
-    <meta name="keywords" content="JWT security checklist, JWT audit, JWT security testing, JSON Web Token security, JWT best practices, JWT vulnerability assessment, JWT security review">
+    <title>JWT Security Checklist 2026: 50+ Point Pentest Audit Guide | JWTAuditor</title>
+    <meta name="description" content="JWT security checklist with 50+ pentest checks: algorithm validation, secret strength, claim verification, key management, token storage. Essential audit guide for developers and security engineers.">
+    <meta name="keywords" content="JWT security checklist, JWT pentest checklist, JWT audit guide, JWT vulnerability assessment, JWT security testing, JWT best practices, JWT security review, OWASP JWT checklist">
+    <meta name="author" content="Sid Joshi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwtauditor.com/docs/jwt-security-checklist.html">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="JWT Security Checklist - Complete Audit Guide">
-    <meta property="og:description" content="Master JWT security with our comprehensive 50+ point checklist. Essential for developers and security professionals.">
+    <meta property="og:title" content="JWT Security Checklist 2026: 50+ Point Pentest Audit Guide">
+    <meta property="og:description" content="50+ security checks for JWT implementations: algorithm validation, secret strength, claim verification, key management.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://jwtauditor.com/docs/jwt-security-checklist.html">
-    <meta property="og:image" content="https://jwtauditor.com/img/jwt-checklist-og.png">
+    <meta property="og:site_name" content="JWTAuditor">
+    <meta property="og:image" content="https://jwtauditor.com/img/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JWT Security Checklist 2026: 50+ Pentest Checks">
+    <meta name="twitter:description" content="Complete JWT audit guide with 50+ security checks for pentesters and developers.">
+    <meta name="twitter:site" content="@infosecmania">
+    <meta name="twitter:image" content="https://jwtauditor.com/img/og-image.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "JWT Security Checklist 2026: 50+ Point Pentest Audit Guide",
+        "description": "Comprehensive JWT security checklist with 50+ checks for developers, security engineers, and penetration testers.",
+        "author": {"@type": "Person", "name": "Sid Joshi", "url": "https://github.com/dr34mhacks"},
+        "publisher": {"@type": "Organization", "name": "JWTAuditor", "url": "https://jwtauditor.com"},
+        "datePublished": "2024-12-20",
+        "dateModified": "2026-07-11",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jwtauditor.com/docs/jwt-security-checklist.html"},
+        "teaches": ["Algorithm validation checks", "Secret strength assessment", "Claim verification", "Key management audit", "Token storage security"],
+        "articleSection": "Security Guides"
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "JWTAuditor",
+                "item": "https://jwtauditor.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Documentation",
+                "item": "https://jwtauditor.com/docs/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "JWT Security Checklist"
+            }
+        ]
+    }
+    </script>
 
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/docs.css">
@@ -77,13 +135,26 @@
             </aside>
 
             <div class="docs-content">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="../index.html">JWTAuditor</a></li>
+                        <li><a href="index.html">Docs</a></li>
+                        <li aria-current="page">JWT Security Checklist</li>
+                    </ol>
+                </nav>
+
                 <div class="docs-header">
                     <h1>JWT Security Checklist</h1>
                     <div class="docs-meta">
                         <span><i class="fas fa-clipboard-check"></i> Security Audit</span>
-                        <span><i class="fas fa-clock"></i> Updated: December 2024</span>
+                        <span><i class="fas fa-clock"></i> Updated: July 2026</span>
                         <span><i class="fas fa-users"></i> All Levels</span>
                     </div>
+                </div>
+
+                <div class="article-byline">
+                    <span class="author"><i class="fas fa-user"></i> <span>By</span> <a href="https://github.com/dr34mhacks" target="_blank">Sid Joshi</a></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> Last updated: July 11, 2026</span>
                 </div>
 
                 <div class="docs-section intro-section">
@@ -541,6 +612,24 @@ company_name_2024</code></pre>
                             <li><span class="check-icon critical">✗</span> Key confusion (RS256→HS256)</li>
                             <li><span class="check-icon critical">✗</span> Weak HMAC secrets</li>
                         </ul>
+                    </div>
+                </div>
+
+                <div class="related-articles">
+                    <h3><i class="fas fa-book-reader"></i> Related Articles</h3>
+                    <div class="related-grid">
+                        <a href="jwt-attack-vectors.html" class="related-card">
+                            <h4>Complete JWT Attack Vectors</h4>
+                            <p>Master 15+ attack techniques used in real-world penetration testing</p>
+                        </a>
+                        <a href="jwt-vulnerabilities-guide.html" class="related-card">
+                            <h4>JWT Vulnerabilities Guide</h4>
+                            <p>Comprehensive overview of JWT security vulnerabilities</p>
+                        </a>
+                        <a href="secure-jwt-implementation.html" class="related-card">
+                            <h4>Secure JWT Implementation</h4>
+                            <p>Best practices for implementing secure JWT authentication</p>
+                        </a>
                     </div>
                 </div>
 

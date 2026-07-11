@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JWT Claim Registry Reference - JWTAuditor</title>
-    <meta name="description" content="Complete reference of registered JWT claims and their proper usage in JSON Web Tokens.">
-    <meta name="keywords" content="JWT, claims, registry, sub, iss, aud, exp, iat, nbf, jti">
+    <title>JWT Claim Registry: All Registered Claims (sub, iss, aud, exp, iat) | JWTAuditor</title>
+    <meta name="description" content="Complete JWT claim registry: sub (subject), iss (issuer), aud (audience), exp (expiration), iat (issued at), nbf (not before), jti (JWT ID). RFC 7519 compliant reference with examples.">
+    <meta name="keywords" content="JWT claim registry, JWT sub claim, JWT iss claim, JWT aud claim, JWT exp claim, JWT iat claim, JWT nbf claim, JWT jti claim, RFC 7519 claims, IANA JWT claims">
+    <meta name="author" content="JWTAuditor Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwtauditor.com/docs/reference/jwt-claim-registry.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="JWT Claim Registry: All Registered Claims Reference">
+    <meta property="og:description" content="Complete JWT claim reference: sub, iss, aud, exp, iat, nbf, jti. RFC 7519 compliant.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jwtauditor.com/docs/reference/jwt-claim-registry.html">
+    <meta property="og:site_name" content="JWTAuditor">
+    <meta property="og:image" content="https://jwtauditor.com/img/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JWT Claim Registry: Complete Reference">
+    <meta name="twitter:description" content="All JWT registered claims: sub, iss, aud, exp, iat, nbf, jti with examples.">
+    <meta name="twitter:site" content="@infosecmania">
+    <meta name="twitter:image" content="https://jwtauditor.com/img/og-image.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "JWT Claim Registry: All Registered Claims Reference",
+        "description": "Complete reference of registered JWT claims including sub, iss, aud, exp, iat, nbf, jti and their proper usage.",
+        "author": {"@type": "Organization", "name": "JWTAuditor Team", "url": "https://jwtauditor.com"},
+        "publisher": {"@type": "Organization", "name": "JWTAuditor", "url": "https://jwtauditor.com"},
+        "datePublished": "2024-12-20",
+        "dateModified": "2026-07-11",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://jwtauditor.com/docs/reference/jwt-claim-registry.html"},
+        "articleSection": "Reference"
+    }
+    </script>
+
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../css/docs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -77,6 +115,11 @@
                         <span><i class="fas fa-list"></i> Reference Guide</span>
                         <span><i class="fas fa-clock"></i> Reading time: 10 min</span>
                     </div>
+                </div>
+
+                <div class="article-byline">
+                    <span class="author"><i class="fas fa-user"></i> <span>By</span> <a href="https://github.com/dr34mhacks" target="_blank">Sid Joshi</a></span>
+                    <span class="date"><i class="fas fa-calendar-alt"></i> Last updated: July 11, 2026</span>
                 </div>
 
                 <div class="docs-section intro-section">
@@ -644,10 +687,9 @@ def validate_jwt_claims(payload):
             </div>
         </div>
         <div class="footer-bottom">
-<p>&copy; 2025 A Project by 
-  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid</a> & 
-  <a href="https://github.com/thecybersandeep" style="color: var(--primary-color);">Sandeep</a> • 
-  
+<p>&copy; 2026 A Project by
+  <a href="https://github.com/dr34mhacks" style="color: var(--primary-color);">Sid Joshi</a> •
+
 </p>            <div class="social-links">
                 <a href="https://x.com/infosecmania" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/infosecmania" target="_blank"><i class="fab fa-linkedin"></i></a>
